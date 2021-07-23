@@ -1,0 +1,110 @@
+@mixin mid-x {
+    position: absolute;
+    left: 50%;
+    @include css3(transform, translateX(-50%));
+}
+
+@mixin mid-y {
+    position: absolute;
+    top: 50%;
+    @include css3(transform, translateY(-50%));
+}
+
+@mixin mid-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include css3(transform, translate(-50%, -50%));
+}
+
+@mixin custom-scrollbar($bar-color: rgba(0, 0, 0, 0.3), $background: #F5F5F5, $thum-color: #000000, $thum-border: #555555) {
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px $bar-color;
+        background-color: $background;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: $bar-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $thum-color;
+        border: 2px solid $thum-border;
+    }
+}
+
+@mixin iframe_video_rate() {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+
+    iframe {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@mixin scrollbar($bg) {
+    $width: $scrollbar-width;
+    $background: $bg;
+    $radius: $scrollbar-width;
+    $border-color: #ddd;
+    $bg-scroll-track: #f3f3f3;
+    @content;
+
+    @each $name in ('', '-moz-', '-ms-', '-webkit-') {
+        &::#{$name}scrollbar:vertical {
+            width: $width;
+            @extend %vertical !optional;
+        }
+
+        &::#{$name}scrollbar:horizontal {
+            height: $width;
+            @extend %horizontal !optional;
+        }
+
+        &::#{$name}scrollbar-track {
+            border-radius: $radius;
+            background-color: $bg-scroll-track;
+            @extend %track !optional;
+        }
+
+        &::#{$name}scrollbar {
+            // background-color: $background;
+            opacity: 0.5;
+            appearance: none;
+            @extend %scrollbar !optional;
+        }
+
+        &::#{$name}scrollbar-thumb {
+            border-radius: $radius;
+            background-color: var(--border-color);
+            background: $background;
+            @extend %thumb !optional;
+        }
+    }
+}
+
+%scrollbar {
+    @include scrollbar($scrollbar-bg) {
+        @at-root {
+
+            // at-root to scope the use of the placeholders to li and to remove li from output
+            %thumb {
+                width: $scrollbar-width;
+                background: $scrollbar-bg;
+            }
+
+            %track {
+                width: $scrollbar-width;
+                background: $scrollbar-bg;
+            }
+        }
+    }
+}

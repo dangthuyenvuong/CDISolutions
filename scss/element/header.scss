@@ -1,0 +1,208 @@
+#header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    word-break: break-word;
+
+    background: white;
+    z-index: 100;
+
+    &.header-fixed {
+        box-shadow: 0px 18px 30px rgb(0 0 0 / 3%);
+    }
+
+    .logo {
+        img {
+            height: 42px !important;
+        }
+
+        margin-right: $padding;
+    }
+
+    nav {
+        margin-right: auto;
+
+        .level1 {
+            display: flex;
+
+            >li {
+                >a {
+                    display: flex;
+                    padding: 10px 20px;
+                    color: #333;
+                    font-weight: 100;
+                    align-items: center;
+                    font-size: 16px;
+
+                    .icon {
+                        margin-left: $padding;
+                        margin-top: 6px;
+                        @include transition;
+                        width: 8px !important;
+                        height: 8px !important;
+                    }
+                }
+
+                &.open {
+                    .sub {
+                        display: block;
+                    }
+
+                    >a {
+                        color: $main-color;
+
+                        .icon {
+                            @include css3(transform, rotateZ(180deg));
+
+                            path {
+                                fill: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .sub {
+
+                position: fixed;
+                padding-top: 20px;
+                padding-bottom: 40px;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: white;
+                z-index: 100;
+                box-shadow: 0px 18px 30px rgb(0 0 0 / 3%);
+                display: none;
+
+                .container {
+                    display: flex;
+                }
+
+                .col {
+                    padding-bottom: 20px;
+                    margin-right: 18px;
+                }
+
+                .border {
+                    border-right: 1px solid rgb(230, 233, 239);
+                    border-top-color: rgb(230, 233, 239);
+                    border-bottom-color: rgb(230, 233, 239);
+                    border-left-color: rgb(230, 233, 239);
+                    margin-right: 32px;
+                    margin-left: 4px;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 16px;
+
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    font-weight: 400;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    line-height: 20px;
+                }
+
+                p {
+                    margin-top: 8px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: rgb(103, 104, 121);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                a {
+                    display: flex;
+                    padding: 16px 8px;
+
+                    &:hover {
+                        background: rgb(229, 244, 255);
+                    }
+
+                    .icon {
+                        display: block;
+                        margin-right: 16px;
+                        ;
+
+                        svg {
+                            width: 17px;
+
+                            path {
+                                stroke: $main-color;
+                            }
+                        }
+                    }
+
+                    .right {
+                        flex: 1;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+            padding-left: $padding * 2;
+        }
+
+        .icon {
+            fill: white;
+
+            svg {
+                height: 11px;
+            }
+        }
+
+        .btn {
+            font-size: 16px;
+            margin-left: $padding * 2;
+        }
+    }
+}
+
+body.open-menu {
+    #overlay {
+        display: block;
+    }
+
+    #footer,
+    #main {
+        filter: blur(8px);
+    }
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+    z-index: 10;
+}
+#main{
+    @include transition;
+}

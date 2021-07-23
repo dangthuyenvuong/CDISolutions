@@ -1,0 +1,139 @@
+.btn-group {
+    display: flex;
+    overflow: hidden;
+
+    .btn {
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+
+    &.group {
+        .btn {
+            border-radius: 0;
+            margin-left: 0;
+
+            &:first-child {
+                border-radius: 100px 0 0 100px;
+            }
+
+            &:last-child {
+                border-radius: 0 100px 100px 0;
+            }
+        }
+    }
+
+}
+
+.btn {
+    border: none;
+    background: $main-color;
+    color: $btn-color;
+    padding: 0 $btn-padding-horizontal;
+    height: $btn-height;
+    line-height: $btn-height;
+    border-radius: $btn-radius;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size;
+    text-decoration: none;
+    outline: none;
+    @include transition;
+
+    .icon {
+        margin-left: $padding;
+    }
+
+    &.btn-info {
+        background: $blue;
+        color: white;
+    }
+
+    &.green,
+    &.btn-success {
+        background: $green;
+        color: white;
+    }
+
+    &.round {
+        border-radius: 100px;
+    }
+
+    &.btn-white{
+        background: white;
+        color: $main-color;
+        &:hover{
+            color: $main-color;
+        }
+    }
+
+    // &.red{
+    //     background: $red;
+    //     color: white;
+    // }
+    // &.blue{
+    //     background: $blue;
+    //     color: white;
+    // }
+    &.full {
+        width: 100%;
+    }
+
+    &.small {
+        height: $input-height-small;
+        line-height: $input-height-small;
+    }
+
+    &.btn-add-on {
+        padding: 0;
+        align-items: center;
+        white-space: nowrap;
+        font-size: $font-size;
+        color: $black;
+        display: flex;
+        align-items: center;
+
+        .add-on {
+            text-align: center;
+            margin-right: 5px;
+            display: inline-block;
+
+            >* {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &:hover {
+        filter: brightness(80%);
+        color: white;
+    }
+
+    @include generateClassColor($classColor) using ($color) {
+        color: white;
+        background: $color;
+        // &:hover{
+        //     filter:brightness(120%);
+        // }
+    }
+
+    &.transparent {
+        background: transparent;
+
+        @include generateClassColor($classColor) using ($color) {
+            color: $color;
+            border: 1px solid $color;
+
+            &:hover {
+                background: $color;
+                color: white;
+
+            }
+        }
+
+    }
+}

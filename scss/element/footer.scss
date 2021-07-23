@@ -1,0 +1,96 @@
+#footer {
+    .top {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .logo {
+            svg{
+                height: 42px;
+            }
+        }
+
+        .copyright {
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 16px;
+            margin-top: 0px;
+        }
+
+        svg {
+            height: 40px;
+            margin-right: 16px;
+        }
+
+        h2 {
+            margin-top: 8px;
+            margin-bottom: 24px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        ul {
+            li {
+                margin-bottom: 18px;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                font-size: 15px;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        border-top:1px solid #e6e9ef;
+        padding: 24px 0;
+
+        .container {
+            .left{
+                display: flex;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                display: block;
+                font-size: 15px;
+                text-decoration: underline;
+                margin-right: 40px;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            .icon-group{
+                margin-right: 40px;
+                display: flex;
+                align-items: center;
+                a{
+                    margin-right: 8px;
+                    img{
+                        width: 24px;
+                    }
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                a{
+                    display: block;
+                    margin-right: 8px;
+                    img{
+                        width: 24px;
+                    }
+                    &:hover{
+
+                    }
+                }
+            }
+        }
+    }
+}

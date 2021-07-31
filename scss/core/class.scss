@@ -195,33 +195,35 @@ body.popup-open{
     display: flex;
     flex-direction: column;
 }
-.input-group{
-    display: flex;
+
+
+// .input-group{
+//     display: flex;
     
-    .btn{
-        border-radius: 4px 0 0 4px;
-        // border: 1px solid #dfdfdf;
-        // background: #fff;
-        padding: 0 10px;
-        &:first-child{
-            border-radius: $btn-radius 0 0 $btn-radius;
-        }
-        &:last-child{
-            border-radius: 0 $btn-radius $btn-radius 0;
-        }
-    }
-    input{
-        display: block;
-        border: 0;
-        border: 1px solid #dfdfdf;
-        padding: 0 10px;
-        margin-bottom: 0;
-        flex: 1;
-        height: $input-height;
-        // width: 28px;
-        text-align: center;
-    }
-}
+//     .btn{
+//         border-radius: 4px 0 0 4px;
+//         // border: 1px solid #dfdfdf;
+//         // background: #fff;
+//         padding: 0 10px;
+//         &:first-child{
+//             border-radius: $btn-radius 0 0 $btn-radius;
+//         }
+//         &:last-child{
+//             border-radius: 0 $btn-radius $btn-radius 0;
+//         }
+//     }
+//     input{
+//         display: block;
+//         border: 0;
+//         border: 1px solid #dfdfdf;
+//         padding: 0 10px;
+//         margin-bottom: 0;
+//         flex: 1;
+//         height: $input-height;
+//         // width: 28px;
+//         text-align: center;
+//     }
+// }
 .text-right{
     text-align: right;
 }

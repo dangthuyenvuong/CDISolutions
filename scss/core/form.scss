@@ -238,15 +238,19 @@
     label {
         position: relative;
         font-size: $label-size;
+
         &.full {
             grid-column: 1/-1;
         }
+
         user-select: none;
         padding-bottom: $input-padding-bottom;
     }
-    .required-badge{
+
+    .required-badge {
         color: $input-error-text-color;
     }
+
     textarea,
     select,
     input {
@@ -259,15 +263,19 @@
         width: 100%;
         margin-top: $label-margin;
         outline: none;
+
         &.input-required {
             border-color: $input-error-border-color;
         }
-        &:focus{
+
+        &:focus {
             border: $input-border-focus;
         }
+
         user-select: auto;
     }
-    textarea{
+
+    textarea {
         width: 100%;
         max-width: 100%;
         height: 150px;
@@ -277,18 +285,72 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    &.horizontal{
-        label{
+    &.horizontal {
+        label {
             display: flex;
-            span{
+
+            span {
                 display: block;
                 width: 150px;
             }
         }
     }
-    .error-text{
+
+    .error-text {
         position: absolute;
         bottom: 10px;
         color: $input-error-text-color;
+    }
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: $input-border;
+    border-color: $input-border-color;
+    border-radius: $input-radius;
+    background: white;
+    overflow: hidden;
+    .icon {
+        padding: 0 $padding;
+
+        svg {
+            height: 20px;
+        }
+    }
+
+    .btn {
+        border-radius: $input-radius 0 0 $input-radius;
+        // border: 1px solid #dfdfdf;
+        // background: #fff;
+        padding: 0 10px;
+
+        &:first-child {
+            border-radius: $btn-radius 0 0 $btn-radius;
+        }
+
+        &:last-child {
+            border-radius: 0 $btn-radius $btn-radius 0;
+        }
+    }
+
+    input {
+        display: block;
+        border: 0;
+        border: none !important;
+        padding: 0 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        flex: 1;
+        height: $input-height;
+        // width: 28px;
+    }
+
+    &.round{
+        border-radius: 100px;
+        .icon-left{
+            padding-left: 20px;
+        }
     }
 }

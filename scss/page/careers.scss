@@ -1,0 +1,116 @@
+#main.careers {
+    background: #ebeef3;
+
+    .section1 {
+        h1{
+            b{
+                color: $main-color;
+            }
+        }
+        padding-top: 200px;
+        padding-bottom: 200px;
+        position: relative;
+        background-size: cover !important;
+        .wrap {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+            color: white;
+            position: relative;
+            z-index: 1;
+            .form {
+                display: flex;
+                column-gap: 10px;
+
+                .input-group {
+                    flex: 1;
+                }
+            }
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(0,0,0,.3);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+    }
+
+    .section2 {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        .list-job {
+            .item {
+                padding: 30px;
+                border-radius: 4px;
+                background: white;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 500;
+
+                p {
+                    font-weight: 100;
+                    flex: 2;
+
+                }
+
+                a:last-child {
+                    color: $a-color;
+                    flex: 2;
+                    text-align: right;
+                }
+
+                .name {
+                    text-decoration: none;
+                    color: $text-black;
+                    flex: 5;
+                }
+            }
+
+            .paginate {
+                justify-content: flex-end;
+            }
+        }
+
+        .paginate {
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+
+            a:not(.prev):not(.next) {
+                width: 30px;
+                height: 30px;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 2px;
+                border-radius: 4px;
+
+                &.active,
+                &:hover {
+                    background: $main-color;
+                    color: white;
+                }
+            }
+
+            .next {
+                background: none;
+                margin-left: 20px;
+            }
+
+            .prev {
+                background: none;
+                margin-right: 20px;
+            }
+        }
+    }
+}

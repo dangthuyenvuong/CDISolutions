@@ -286,3 +286,39 @@
 	// max-width: $container-width;
 	margin: 0 auto;
 }
+
+
+.m-b-lg{
+	margin-bottom: $margin-lg;
+}
+
+.m-b-md{
+	margin-bottom: $margin-md;
+}
+
+.m-b-sm{
+	margin-bottom: $margin-sm;
+}
+
+.m-b{
+	margin-bottom: $margin;
+}
+
+
+
+
+.m-t-lg{
+	margin-top: $margin-lg;
+}
+
+.m-t-md{
+	margin-top: $margin-md;
+}
+
+.m-t-sm{
+	margin-top: $margin-sm;
+}
+
+.m-t{
+	margin-top: $margin;
+}

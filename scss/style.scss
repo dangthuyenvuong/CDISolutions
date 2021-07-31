@@ -1,4 +1,4 @@
-@import "element/variable.scss";
+@import "element/variable";
 @import "core/variable";
 
 @import "core/css3";
@@ -9,6 +9,7 @@
 @import "core/reset";
 @import "core/class";
 @import "core/button";
+@import "core/page";
 // @import "template/class";
 // @import 'template/font';
 // @import "template/combonent";
@@ -18,4 +19,8 @@
 @import "element/font";
 @import "element/header";
 @import "element/footer";
+@import "element/pageloading";
+
+
 @import "page/home";
+@import "page/contact";

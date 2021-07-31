@@ -1,0 +1,16 @@
+$columns: 12 !default;
+$container: 1160px !default;
+$container-width: 1160px !default;
+$container-padding: 15px !default;
+$container-width-mid: 1440px !default;
+
+$container-min: $container - 300px;
+$padding-col : 10px !default;
+
+
+
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 960px !default;
+$xl: 1140px !default;
+$grid: ("sm":$sm, "md": $md, "lg": $lg, "xl": $xl);

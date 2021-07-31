@@ -1,0 +1,52 @@
+.h1{
+    font-size: $h1-size;
+    line-height: $h1-line-height;
+    font-weight: $h1-weight;
+}
+.h2{
+    font-size: $h2-size;
+    line-height: $h2-line-height;
+    font-weight: $h2-weight;
+}
+.h3{
+    font-size: $h3-size;
+    line-height: $h3-line-height;
+    font-weight: $h3-weight;
+}
+.h4{
+    font-size: $h4-size;
+    line-height: $h4-line-height;
+    font-weight: $h4-weight;
+}
+
+.p{
+    font-size: $p-size;
+    line-height: $p-line-height;
+    font-weight: $p-weight;
+}
+
+%p{
+    font-size: $p-size;
+    line-height: $p-line-height;
+    font-weight: $p-weight;
+}
+
+
+%p-small{
+    font-size: $p-small-size;
+    line-height: $p-small-line-height;
+    font-weight: $p-small-weight;
+}
+
+
+a{
+    &.blue{
+        color: $blue;
+        &:hover{
+            color: darken($color: $blue, $amount: 5);
+        }
+    }
+    &.underline{
+        text-decoration: underline;
+    }
+}

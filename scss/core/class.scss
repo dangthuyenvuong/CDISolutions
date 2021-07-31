@@ -47,108 +47,107 @@
 }
 
 
-.form-group{
-    position: relative;
-    label{
-        font-size: 14px;
-        color: #8a8a8a;
-        margin: 0;
-        transform-origin: left top;
-        transition: .2s ease all;
-        -moz-transition: .2s ease all;
-        -webkit-transition: .2s ease all;
-        position: absolute;
-        top: 14px;
-        left: 20px;
-        cursor: text;
-        z-index: 9;
-        font-weight: 400;
-        pointer-events: none;
-    }
+// .form-group{
+//     position: relative;
+//     label{
+//         font-size: 14px;
+//         color: #8a8a8a;
+//         margin: 0;
+//         transform-origin: left top;
+//         transition: .2s ease all;
+//         -moz-transition: .2s ease all;
+//         -webkit-transition: .2s ease all;
+//         position: absolute;
+//         top: 14px;
+//         left: 20px;
+//         cursor: text;
+//         z-index: 9;
+//         font-weight: 400;
+//         pointer-events: none;
+//     }
 
-    textarea,
-    input:not([type="checkbox"]){
-        max-width: 100%;
-        display: block;
-        font-weight: 400;
-        background-clip: padding-box;
-        border: solid thin #e2e2e2;
-        border-radius: $input-radius;
-        color: #333;
-        font-size: 14px;
-        height: $input-height;
-        padding: 10px 10px 10px 20px;
-        background-color: white;
-        width: 100%;
-        outline: none;
-        box-shadow: none;
-        box-sizing: border-box;
-        @include css3(transition, $transition);
-        &:focus{
-            border-color: $blue-bright;
-        }
-    }
+//     textarea,
+//     input:not([type="checkbox"]){
+//         max-width: 100%;
+//         display: block;
+//         font-weight: 400;
+//         background-clip: padding-box;
+//         border: solid thin #e2e2e2;
+//         border-radius: $input-radius;
+//         color: #333;
+//         font-size: 14px;
+//         height: $input-height;
+//         padding: 10px 10px 10px 20px;
+//         background-color: white;
+//         width: 100%;
+//         outline: none;
+//         box-shadow: none;
+//         box-sizing: border-box;
+//         @include css3(transition, $transition);
+//         &:focus{
+//             border-color: $blue-bright;
+//         }
+//     }
 
-    textarea{
-        border-radius: 5px;
-        padding: 10px;
-        font-family: "Roboto";
-    }
-    .term{
-        position: relative;
-        left: 0;
-        top: 0;
-        pointer-events: auto;
-        cursor: pointer;
-        p{
-            margin-left: 10px;
-        }
-    }
-    &.form-add-on{
-        display: flex;
-        input{
-            border: none;
-            background: none;
-            text-align: center;
-        }
-        border: $border;
-        background: white;
-        border-radius: $radius;
-        overflow: hidden;
-        .btn{
-            border-radius: 0;
-        }
-        &:focus{
-            border-color: $blue-bright;
-        }
-    }
+//     textarea{
+//         border-radius: 5px;
+//         padding: 10px;
+//         font-family: "Roboto";
+//     }
+//     .term{
+//         position: relative;
+//         left: 0;
+//         top: 0;
+//         pointer-events: auto;
+//         cursor: pointer;
+//         p{
+//             margin-left: 10px;
+//         }
+//     }
+//     &.form-add-on{
+//         display: flex;
+//         input{
+//             border: none;
+//             background: none;
+//             text-align: center;
+//         }
+//         border: $border;
+//         background: white;
+//         border-radius: $radius;
+//         overflow: hidden;
+//         .btn{
+//             border-radius: 0;
+//         }
+//         &:focus{
+//             border-color: $blue-bright;
+//         }
+//     }
 
 
-    &.google-style{
-        textarea,
-        input:not([type="checkbox"]){
+//     &.google-style{
+//         textarea,
+//         input:not([type="checkbox"]){
            
 
-            &.valid,
-            &:focus{
-                padding: 18px 10px 2px 20px;
-                & + label{
-                    top: 4px;
-                    font-size: 11px;
-                }
-            }
+//             &.valid,
+//             &:focus{
+//                 padding: 18px 10px 2px 20px;
+//                 & + label{
+//                     top: 4px;
+//                     font-size: 11px;
+//                 }
+//             }
             
-        }
-    }
+//         }
+//     }
 
-    &.horizontal{
-        display: flex;
-        .btn{
-            white-space: nowrap;
-        }
-    }
-   
-}
+//     &.horizontal{
+//         display: flex;
+//         .btn{
+//             white-space: nowrap;
+//         }
+//     }
+// }
 @import "form";
 @import "panel";
 

@@ -1,0 +1,40 @@
+$main-color: #1E97DC !default;
+$text-black: black;
+$text-color: $text-black;
+$a-color: #0B1966;
+$yellow: yellow;
+$second-color: #CF9B4C;
+
+$yellow:#f9c100;
+$green:#4caf50;
+$gray: #dedede;
+$red: #f44336;
+$red-dark: #f44336;
+$black: #222;
+$black-bright: #aaa;
+$blue: rgb(0, 22, 190) !default;
+$blue-bright: #4db2ec;
+$orange: rgb(255, 111, 49);
+$purple: rgb(65, 12, 188);
+$pink: rgb(196, 15, 121);
+
+$a-color: $blue;
+
+$classColor: ("orange":$orange,
+    "yellow":$yellow,
+    "green":$green,
+    "gray": $gray,
+    "red": $red,
+    "black": $black,
+    "blue": #{$blue},
+    "pink": $pink,
+    "purple" : $purple);
+$classGradient: (("red-blue", $red, $blue),
+    ("red-green", $red, $green),
+    ("red-yellow", $red, $green),
+    ("yellow-blue", $yellow, $blue),
+    ("yellow-green", $yellow, $green),
+    ("green-blue", $yellow, $green),
+    ("purple-orange", $purple, $orange),
+    ("pink-blue", $pink, $blue),
+);

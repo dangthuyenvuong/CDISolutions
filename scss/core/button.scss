@@ -8,6 +8,8 @@
         }
     }
 
+    
+
     &.group {
         .btn {
             border-radius: 0;
@@ -136,5 +138,12 @@
             }
         }
 
+    }
+
+    &.lg{
+        height: $btn-height-lg;
+        line-height: $btn-height-lg;
+        font-size: $btn-font-size-lg;
+        padding: $btn-padding-lg;
     }
 }

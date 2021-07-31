@@ -1,7 +1,6 @@
 #header {
     display: flex;
     align-items: center;
-    height: 72px;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,13 +8,16 @@
     word-break: break-word;
 
     background: white;
-    z-index: 100;
+    z-index: 1000;
 
     &.header-fixed {
         box-shadow: 0px 18px 30px rgb(0 0 0 / 3%);
     }
 
     .logo {
+        display: flex;
+        align-items: center;
+
         img {
             height: 42px !important;
         }
@@ -32,7 +34,7 @@
             >li {
                 >a {
                     display: flex;
-                    padding: 10px 20px;
+                    padding: 25px 20px;
                     color: #333;
                     font-weight: 100;
                     align-items: center;
@@ -90,6 +92,48 @@
                     margin-right: 18px;
                 }
 
+                .services-col {
+                    a {
+                        white-space: nowrap;
+                        position: relative;
+                        line-height: 32px;
+                        .icon{
+                            margin-top: 0;
+                        }
+                        &.active{
+                            .icon-see svg{
+                                fill: $main-color;
+                            }
+                        }
+                    }
+
+                    .icon-see {
+                        margin-top: 0;
+                        width: 25px;
+                        height: 10px;
+                        margin-top: -22px;
+                        margin-left: 6px;
+                        @include css3(transform, rotateZ(90deg));
+                        svg{
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .feature-col {
+                    flex-wrap: wrap;
+                    display: flex;
+                    width: 70%;
+                    h2 {
+                        width: 100%;
+                    }
+
+                    >* {
+                        width: 50%;
+                    }
+                }
+
                 .border {
                     border-right: 1px solid rgb(230, 233, 239);
                     border-top-color: rgb(230, 233, 239);
@@ -110,9 +154,8 @@
                 h3 {
                     font-weight: 400;
                     text-overflow: ellipsis;
-                    white-space: nowrap;
                     overflow: hidden;
-                    line-height: 20px;
+                    line-height: 25px;
                     display: flex;
                     align-items: center;
 
@@ -122,6 +165,7 @@
                         margin-left: 16px;
                         @include css3(transform, rotateZ(-90deg));
                     }
+                    
                 }
 
                 p {
@@ -138,17 +182,19 @@
 
                 a {
                     display: flex;
-                    padding: 16px 8px;
+                    padding: 8px;
+                    margin-bottom: 1px;
 
                     &.active,
                     &:hover {
                         background: rgb(229, 244, 255);
+                        color: $main-color;
                     }
 
                     .icon {
                         display: block;
                         margin-right: 16px;
-                        ;
+                        margin-top: 3px;
 
                         svg {
                             width: 17px;
@@ -170,10 +216,11 @@
                     padding: 8px;
                     font-size: 14px;
                     margin-bottom: -20px;
+
                     svg {
                         width: 10px;
                         height: 10px;
-                        margin-top: 7px;
+                        margin-top: 0;
                         margin-left: 16px;
                         @include css3(transform, rotateZ(-90deg));
                     }
@@ -192,6 +239,10 @@
         }
 
         .lang {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
             .icon {
                 fill: white;
 

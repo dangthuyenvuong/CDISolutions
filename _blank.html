@@ -1,30 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Website title</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="./css/stylelibs.min.css">
+	<link rel="stylesheet" href="./css/style.min.css">
 </head>
-<body class="">
+
+<body>
 	<div class="main-container">
-		<header class="main-header header-desktop">
-			
+		<header id="header">
+			<div class="container flex">
+				<a href="#" class="logo">
+					<img src="./img/monday-logo-x2.png" alt="">
+				</a>
+				<nav>
+					<ul class="level1">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">
+								Services
+								<img class="icon" src="./img/arrow-down.svg" alt="">
+							</a>
+							<div class="sub">
+								<div class="container">
+									<div class="col services-col">
+										<h2>Services</h2>
+										<a href="#" class="active" data-id="mobile">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Moblie Development <img class="icon" src="./img/arrow-down.svg"
+														alt=""></h3>
+												<!-- <p>Learn more about the platform, main features, and benefits</p> -->
+
+											</div>
+										</a>
+										<a href="#" data-id="website">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Web Development <img class="icon" src="./img/arrow-down.svg" alt="">
+												</h3>
+												<!-- <p>Learn more about the platform, main features, and benefits</p> -->
+											</div>
+										</a>
+										<a href="#" data-id="ecommerce">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>eCommerce Development <img class="icon" src="./img/arrow-down.svg"
+														alt=""></h3>
+												<!-- <p>Learn more about the platform, main features, and benefits</p> -->
+											</div>
+										</a>
+										<a href="#" data-id="design">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Design Service <img class="icon" src="./img/arrow-down.svg" alt="">
+												</h3>
+												<!-- <p>Learn more about the platform, main features, and benefits</p> -->
+											</div>
+										</a>
+										<a href="#" data-id="digital">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Digital Marketing <img class="icon" src="./img/arrow-down.svg"
+														alt=""></h3>
+												<!-- <p>Learn more about the platform, main features, and benefits</p> -->
+											</div>
+										</a>
+
+									</div>
+									<div class="border"></div>
+									<div class="col feature-col mobile active">
+										<h2>Features</h2>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Realtime DB</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Tracking user activity</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Push notification</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<!-- <a href="#" class="see-more">See all features <i class="icon"><img class="icon"
+													src="./img/arrow-down.svg" alt=""></i></a> -->
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Content management system</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Multi version</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<!-- <a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Multi vendor</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a> -->
+									</div>
+									<div class="col feature-col website" style="display: none;">
+										<h2>Features</h2>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Content management system</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Media Management</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Tracking user activity</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<!-- <a href="#" class="see-more">See all features <i class="icon"><img class="icon"
+													src="./img/arrow-down.svg" alt=""></i></a> -->
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Realtime DB</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Multi website</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Permission</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+									</div>
+									<div class="col feature-col ecommerce" style="display: none;">
+										<h2>Features</h2>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Content management system</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Multistore</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Tracking user activity</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Multi report</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Promotion</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Store warehouse</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#" class="see-more">See all features <i class="icon"><img class="icon"
+													src="./img/arrow-down.svg" alt=""></i></a>
+									</div>
+									<div class="border"></div>
+									<div class="col">
+										<h2>Why cdit.vn?</h2>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Customer</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Review</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="icon">
+												<img src="./img/icon-calendar.svg" alt="">
+											</div>
+											<div class="right">
+												<h3>Functional</h3>
+												<p>Learn more about the platform, main features, and benefits</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Industries</a>
+						</li>
+						<li>
+							<a href="#">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								About us
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-right">
+					<div class="lang">
+						<a href="#" class="head">
+							English
+							<i class="icon"><img width="10" height="10" data-src="./img/arrow-down.svg" alt="" /></i>
+						</a>
+					</div>
+					<!-- <a href="#">Log in</a> -->
+					<a href="#" class="btn round">Contact Sales
+						<i class="icon" src="./img/icon-arrow-right.svg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
+								<path
+									d="M.313 12.045l5.113-5.112L.313 1.821A1.065 1.065 0 1 1 1.82.312L7.687 6.18a1.064 1.064 0 0 1 0 1.508L1.82 13.554a1.065 1.065 0 1 1-1.507-1.508z">
+								</path>
+							</svg>
+						</i>
+					</a>
+				</div>
+			</div>
 		</header>
-		<main id="main-content">
+		<div id="overlay"></div>
+		<main id="main" class="homepage">
 			
 		</main>
-		<footer class="main-footer">
-            
-        </footer>
+		<footer id="footer">
+			<div class="container top">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#" class="logo">
+							<img src="./img/icon-logo.svg" alt="">
+						</a>
+						<p class="des">Our Vision is to make a positive impact on the best software in the world, on our
+							people, and on our global communities</p>
+						<!-- <div class="flex">
+							<a href="#">
+								<img src="./img/icon-apple.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/google-store.svg" alt="">
+							</a>
+						</div> -->
+						<h2 style="margin-bottom: 10px;margin-top: 20px;">Contact</h2>
+						<ul>
+							<li><a href="#">Phone: (888) 400-TASK</a></li>
+							<li><a href="#">Support: info@cdit.com</a></li>
+							<li><a href="#">For sale: sales@cdit.com</a></li>
+							<li><a href="#">For job: jobs@cdit.com</a></li>
+						</ul>
+						<div class="flex icon-group">
+							<a href="#">
+								<img src="./img/icon-twitter.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/icon-linked.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/icon-facebook.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/icon-ytb.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/icon-instagram.svg" alt="">
+							</a>
+						</div>
+
+
+					</div>
+					<div class="row col-md-8">
+						<div class="col-md-4">
+							<h2>Services</h2>
+							<ul>
+								<li><a href="#">Product overview</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Enterprise</a></li>
+								<li><a href="#">Small-medium business</a></li>
+								<li><a href="#">Templates</a></li>
+
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<h2>Industries</h2>
+							<ul>
+								<li><a href="#">Marketing</a></li>
+								<li><a href="#">Sales and CRM</a></li>
+								<li><a href="#">IT</a></li>
+								<li><a href="#">Software development</a></li>
+								<li><a href="#">HR</a></li>
+								<li><a href="#">Operations</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h2>Company</h2>
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">Careers</a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 left">
+							<a href="#">Status</a>
+							<a href="#">Security</a>
+							<!-- <div class="icon-group">
+								<a href="#">
+									<img src="./img/iso-logo1.png" alt="">
+								</a>
+								<a href="#">
+									<img src="./img/gdpr-logo.png" alt="">
+								</a>
+								<a href="#">
+									<img src="./img/soc-logo.png" alt="">
+								</a>
+								<a href="#">
+									<img src="./img/hipaa-logo.png" alt="">
+								</a>
+							</div> -->
+
+							<a href="#">Terms and privacy</a>
+							<a href="#">Privacy policy</a>
+							<a href="#">Accessibility statement</a>
+						</div>
+						<div class="right col-md-3">
+							<p class="copyright">All Rights Reserved © cdit.com</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	<div class="loading-page">
-        <div class="wrap">
-            <img src="img/loading.gif" alt="Loading">
-        </div>
-    </div>
-    <script src="js/lib/jquery.min.js"></script>
-	<script src="js/lib/extension.js"></script>
-	<script src="js/main.js"></script>
+	<div id="page-loading"></div>
+	<script src="./js/jslib.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>

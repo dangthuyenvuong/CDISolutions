@@ -1,0 +1,14 @@
+$font-family: Eurostile,
+Helvetica,
+Arial,
+sans-serif !default;
+$font-size: 13px !default;
+
+$border: 1px solid #ccc;
+$radius: 5px;
+
+$transition: all .3s ease !default;
+
+@mixin transition {
+    @include css3(transition, $transition);
+}

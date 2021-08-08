@@ -33,11 +33,6 @@
 .transition{
     @include css3(transition,$transition);
 }
-
-
-.text-center{
-    text-align: center;
-}
 .link-icon{
     display: flex;
     align-items: center;

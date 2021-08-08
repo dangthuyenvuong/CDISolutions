@@ -18,6 +18,14 @@ $('.main-carousel').flickity({
     wrapAround: true
 });
 
+$('.carousel').flickity({
+    // options
+    autoPlay: true,
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true
+});
+
 (() => {
     let $menu
 

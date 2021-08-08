@@ -1,54 +1,76 @@
-.h1{
+.h1 {
     font-size: $h1-size;
     line-height: $h1-line-height;
     font-weight: $h1-weight;
     margin-bottom: $h1-margin-bottom;
 }
-.h2{
+
+.h2 {
     font-size: $h2-size;
     line-height: $h2-line-height;
     font-weight: $h2-weight;
+    margin-bottom: $h2-margin-bottom;
+
 }
-.h3{
+
+.h3 {
     font-size: $h3-size;
     line-height: $h3-line-height;
     font-weight: $h3-weight;
+    margin-bottom: $h3-margin-bottom;
+
 }
-.h4{
+
+.h4 {
     font-size: $h4-size;
     line-height: $h4-line-height;
     font-weight: $h4-weight;
+    margin-bottom: $h4-margin-bottom;
 }
 
-.p{
+%p,
+.p {
     font-size: $p-size;
     line-height: $p-line-height;
     font-weight: $p-weight;
-}
-
-%p{
-    font-size: $p-size;
-    line-height: $p-line-height;
-    font-weight: $p-weight;
+    margin-bottom: $p-margin-bottom;
 }
 
 
-%p-small{
+.p-small,
+%p-small {
     font-size: $p-small-size;
     line-height: $p-small-line-height;
     font-weight: $p-small-weight;
+    margin-bottom: $p-margin-bottom;
+}
+
+.p-lg,
+%p-lg {
+    font-size: $p-lg-size;
+    line-height: $p-lg-line-height;
+    font-weight: $p-lg-weight;
+    margin-bottom: $p-margin-bottom;
 }
 
 
-a{
-    &.blue{
+a {
+    &.blue {
         color: $blue;
-        &:hover{
+
+        &:hover {
             color: darken($color: $blue, $amount: 5);
         }
     }
-    &.underline{
+
+    &.underline {
         text-decoration: underline;
     }
 }
 
+.bold{
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+}

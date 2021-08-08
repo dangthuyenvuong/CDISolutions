@@ -1,0 +1,22 @@
+.accordion {
+    border-bottom: 1px solid #ccc;
+    .title {
+        font-size: 25px;
+        cursor: pointer;
+        padding: $padding * 2 0;
+    }
+
+    &.active > .title,
+    .title:hover{
+        color: $main-color;
+    }
+
+    .content {
+        display: none;
+        padding-bottom: $padding * 2;
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}

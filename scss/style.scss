@@ -1,27 +1,43 @@
 @import "element/variable";
 @import "core/variable";
-
 @import "core/css3";
-@import "core/grid";
-@import "core/mixin";
+
 
 
 @import "core/reset";
 @import "core/class";
 @import "core/button";
-@import "core/page";
+@import "core/text";
+
+
+@import "core/grid";
+@import "core/mixin";
 // @import "template/class";
 // @import 'template/font';
 // @import "template/combonent";
 // @import "template/master";
 
 
+
+@import "core/component/accordion";
+@import "core/component/blog-content";
+@import "core/component/blog-post";
+
+
 @import "element/font";
 @import "element/header";
 @import "element/footer";
 @import "element/pageloading";
+@import "element/general";
+
+
+
+
 
 
 @import "page/home";
 @import "page/contact";
 @import "page/careers";
+@import "page/about";
+@import "page/service-mobile";
+@import "page/service-web";

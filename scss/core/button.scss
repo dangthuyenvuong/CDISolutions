@@ -8,7 +8,7 @@
         }
     }
 
-    
+
 
     &.group {
         .btn {
@@ -37,12 +37,14 @@
     border-radius: $btn-radius;
     cursor: pointer;
     text-align: center;
-    display: flex;
+    // display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     font-size: $font-size;
     text-decoration: none;
     outline: none;
+
     @include transition;
 
     .icon {
@@ -65,10 +67,11 @@
         border-radius: 100px;
     }
 
-    &.btn-white{
+    &.btn-white {
         background: white;
         color: $main-color;
-        &:hover{
+
+        &:hover {
             color: $main-color;
         }
     }
@@ -81,16 +84,16 @@
     //     background: $blue;
     //     color: white;
     // }
-    &.full {
+    &.-full {
         width: 100%;
     }
 
-    &.small {
+    &.-small {
         height: $input-height-small;
         line-height: $input-height-small;
     }
 
-    &.btn-add-on {
+    &.-btn-add-on {
         padding: 0;
         align-items: center;
         white-space: nowrap;
@@ -140,10 +143,14 @@
 
     }
 
-    &.lg{
+    &.-lg {
         height: $btn-height-lg;
         line-height: $btn-height-lg;
         font-size: $btn-font-size-lg;
         padding: $btn-padding-lg;
+    }
+
+    &.-round {
+        border-radius: 100px;
     }
 }

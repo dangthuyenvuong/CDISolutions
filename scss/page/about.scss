@@ -1,0 +1,173 @@
+.about #main {
+    .section1 {
+        height: 770px;
+
+        >.flex {
+            height: 100%;
+            color: white;
+
+            .left {
+                padding: 100px $container-padding;
+                background: $main-color;
+                border-radius: 0 30% 0 0;
+            }
+
+            .right {
+                background-size: cover !important;
+                border-radius: 0 0 30% 0;
+            }
+        }
+    }
+
+    .section2 {
+        padding: 100px 0;
+
+        .top {
+
+            // h2 {
+            //     font-size: 62px;
+            //     line-height: 74px;
+            // }
+            h3 {
+                color: $main-color;
+            }
+        }
+
+
+        p {
+            font-size: 21px;
+            line-height: 37px;
+        }
+
+        .mid {
+            margin-top: 150px;
+
+            h3 {
+                margin-top: 30px;
+                color: $main-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .section3 {
+        padding-bottom: 100px;
+
+        .list {
+            margin-top: 100px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .section6,
+    .section4 {
+        padding: 100px 0;
+
+        .h3 {
+            color: $main-color;
+        }
+
+        .accordion {
+            .title {
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    right: 0;
+                    content: '';
+                    display: block;
+                    top: 32px;
+                    width: 20px;
+                    height: 20px;
+                    background: url('../img/icon-arrow-down.svg') no-repeat right center;
+                    background-size: 100%;
+                    @include transition;
+                }
+            }
+
+            &.active {
+                .title:after {
+                    @include css3(transform, rotateZ(-180deg));
+                }
+            }
+        }
+    }
+
+    .section5 {
+        padding: 100px 0 100px 0;
+        background: darken($color: $main-color, $amount: 40);
+        color: white;
+
+        .carousel {
+            padding-top: 100px;
+
+            .flickity-page-dots {
+                display: none;
+            }
+
+            .carousel-cell {
+                padding: 0 20px;
+                img {
+                    border-top-left-radius: 40%;
+                    @include transition;
+                }
+
+                .wrap {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .info {
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, .95) 77%);
+                    position: absolute;
+                    bottom: 0;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    right: 0;
+                    left: 0;
+                    padding: 0 20px;
+                    z-index: 1000;
+                    .name {
+                        margin-bottom: 0;
+                        font-weight: bold;
+                    }
+
+                    .icon {
+                        position: absolute;
+                        right: 20px;
+                        bottom: 20px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        border: 2px solid white;
+                        background: transparent;
+
+                        svg {
+                            width: 10px;
+                            fill: white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    img {
+                        @include css3(transform, scale(1.1));
+                    }
+
+                    .icon {
+                        border-color: $main-color;
+                        background: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

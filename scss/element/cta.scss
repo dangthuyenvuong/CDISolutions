@@ -1,0 +1,57 @@
+.cdi-cta {
+    color: white;
+    background: #2b2c5d;
+    text-align: center;
+    padding: 80px 0 100px 0;
+    background-size: cover !important;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 280px;
+
+    h2 {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    .btn-wrap {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .btn {
+            line-height: 50px;
+            height: 50px;
+            font-size: 18px;
+            padding: 0 32px;
+        }
+
+        .icon {
+            fill: $main-color;
+            margin-left: 16px;
+
+            svg {
+                height: 13px;
+                margin-bottom: -2px;
+            }
+        }
+    }
+
+    .btn-career {
+        background: transparent;
+        color: white;
+
+        svg {
+            fill: white;
+        }
+    }
+}

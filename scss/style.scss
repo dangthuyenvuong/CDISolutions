@@ -8,6 +8,7 @@
 @import "core/class";
 @import "core/button";
 @import "core/text";
+@import "core/image";
 
 
 @import "core/grid";
@@ -29,6 +30,9 @@
 @import "element/footer";
 @import "element/pageloading";
 @import "element/general";
+@import "element/post";
+@import "element/banner";
+@import "element/cta";
 
 
 
@@ -41,3 +45,4 @@
 @import "page/about";
 @import "page/service-mobile";
 @import "page/service-web";
+@import "page/service-ecommerce";

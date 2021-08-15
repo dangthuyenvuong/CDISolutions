@@ -1,0 +1,46 @@
+.cdi-post{
+    border: 1px solid black;
+    .cover{
+        height: 250px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            @include transition;
+        }
+    }
+    .info{
+        padding: $padding * 2;
+        .title{
+            margin-bottom: $padding * 2;
+            @include text-overflow(2);
+        }
+        .read-more{
+            align-items: center;
+            display: flex;
+            color: black;
+            .icon{
+                margin-left: $padding;
+                svg{
+                    width: 15px;
+                }
+            }
+            &:hover{
+                color: $main-color;
+                svg{
+                    fill: $main-color;
+                }
+            }
+        }
+    }
+    &:hover{
+        .cover{
+            img{
+                @include css3(transform, scale(1.1));
+            }
+        }
+    }
+
+}

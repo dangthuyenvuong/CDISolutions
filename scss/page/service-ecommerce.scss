@@ -1,0 +1,65 @@
+.service-ecommerce #main {
+    .section1 {
+        h1 {
+            letter-spacing: -3px;
+        }
+    }
+
+    .section2 {
+        padding: 100px 0;
+
+        h2 {
+            padding-bottom: 50px;
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: unset;
+            border-top: 1px solid black;
+            padding-left: 22px;
+            padding-top: 20px;
+
+            li {
+                @extend %p;
+            }
+        }
+    }
+    .section3{
+        .item{
+            background: var(--background, white);
+            padding: 100px 0;
+            color: var(--text-color, black);
+            &:nth-child(2n){
+                .cover{
+                    order: -1;
+                }
+            }
+            .list{
+                > div{
+                    border-top: 1px solid var(--text-color, black);
+                    padding-top: 20px;
+                }
+                .h4{
+                    font-weight: bold;
+                }
+            }
+            .info > p {
+                margin-bottom: 40px;
+            }
+        }
+        h2{
+            font-weight: bold;
+        }
+        ol{
+            list-style: auto;
+            padding-left: 22px;
+            text-indent: 8px;
+        }
+        li{
+            @extend %p;
+        }
+    }
+    .section4{
+        padding-bottom: 100px;
+    }
+}

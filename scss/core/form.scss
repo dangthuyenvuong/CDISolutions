@@ -208,7 +208,7 @@
         border-image: initial;
         border-radius: 4px;
         padding: 6px 12px;
-        font: 400 13.3333px Arial;
+        font-family: main;
         @include focus;
     }
 }
@@ -263,7 +263,7 @@
         width: 100%;
         margin-top: $label-margin;
         outline: none;
-
+        font-size: $input-size;
         &.input-required {
             border-color: $input-error-border-color;
         }
@@ -279,6 +279,8 @@
         width: 100%;
         max-width: 100%;
         height: 150px;
+        font-family: main;
+        padding: $input-padding;
     }
 
     &.form-2 {

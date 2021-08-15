@@ -1,0 +1,22 @@
+.cdi-banner {
+    padding: 100px 0;
+    text-align: center;
+    background: #f4f4ff;
+
+    .container {
+        max-width: 900px;
+
+        p {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.cdi-banner-e {
+    background: var(--color);
+    height: calc(100vh - 72px);
+    .left {
+        border-right: 1px solid rgb(11, 125, 177);
+    }
+}

@@ -116,6 +116,7 @@
 
     &:hover {
         filter: brightness(80%);
+        // background: darken($color: $main-color, $amount: 0);
         color: white;
     }
 

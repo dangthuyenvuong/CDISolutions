@@ -10,13 +10,30 @@ $(window).on('scroll', () => {
     }
 })
 
-$('.main-carousel').flickity({
+let $carousel = $('.main-carousel').flickity({
     // options
     autoPlay: true,
     cellAlign: 'center',
     contain: true,
-    wrapAround: true
-});
+    wrapAround: true,
+})
+
+$carousel.find('.carousel-cell').on('click', function() {
+    let i = $(this).data('index')
+    $carousel.flickity('select', i)
+})
+
+// var flkty = $carousel.data('flickity');
+// let $imgs = $('.carousel-cell img');
+// $carousel.on('scroll.flickity', function (event, progress) {
+//     flkty.slides.forEach(function (slide, i) {
+//         var img = $imgs[i];
+//         var x = (slide.target + flkty.x) * -1 / 3;
+//         img.style.transform = 'translateX( ' + x + 'px)';
+//     });
+// });
+
+
 
 $('.carousel').flickity({
     // options
@@ -33,32 +50,33 @@ $('.carousel').flickity({
         e.stopPropagation()
     })
 
-    $('#header .level1 li:has(.sub) > a').on('mouseenter', function (e) {
-        // $('body').toggleClass('open-menu')
+    $('#header .level1 li:has(.sub) > a').on('click', function (e) {
 
         e.preventDefault()
         e.stopPropagation()
+        $('body').toggleClass('open-menu')
 
-        if ($menu && $menu?.[0] !== this) {
-            $menu?.removeClass('open')
-        }
+
+        // if ($menu && $menu?.[0] !== this) {
+        //     $menu?.removeClass('open')
+        // }
         $menu = $(this).closest('li').toggleClass('open')
-        if ($menu.hasClass('open')) {
-            $('body').addClass('open-menu')
-        } else {
-            $('body').removeClass('open-menu')
-        }
+        // if ($menu.hasClass('open')) {
+        //     $('body').addClass('open-menu')
+        // } else {
+        //     $('body').removeClass('open-menu')
+        // }
     })
 
-    function closeMenu(){
+    function closeMenu() {
         $('body').removeClass('open-menu')
         $menu.removeClass('open')
         $menu = null
     }
 
-    $('#header .level1 li:has(.sub) > .sub').on('mouseleave', closeMenu)
+    // $('#header .level1 li:has(.sub) > .sub').on('mouseleave', closeMenu)
 
-    $('#overlay').on('click',closeMenu)
+    $('#overlay').on('click', closeMenu)
 
     $('.services-col a').on('click', (e) => {
         let id = $(e.currentTarget).data('id')

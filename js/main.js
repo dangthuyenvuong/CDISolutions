@@ -140,5 +140,19 @@ $(document).ready(() => {
             });
         }
     })
+
+
+
+    $('.select-open').on('change', function() {
+        let $this = $(this)
+        let value = $this.val()
+        let name = $this.attr('name')
+
+        $(`[data-select-name="${name}"]`).hide()
+        $(`[data-select-name="${name}"][data-select-id="${value}"]`).show()
+    })
+
+    $('[data-select-name]').filter('.select-open').hide()
+    $('.select-open').trigger('change')
 })
 

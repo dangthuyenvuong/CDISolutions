@@ -161,7 +161,7 @@ img {
 
 a{
 	color: $text-color;
-	@include transition;
+	// @include transition;
 	user-select: none;
 	&:hover{
 		color: $main-color;

@@ -1,0 +1,12 @@
+%center-x,
+.center-x{
+    left: 50%;
+    position: absolute;
+    @include css3(transform, translateX(-50%));
+}
+
+%xy-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

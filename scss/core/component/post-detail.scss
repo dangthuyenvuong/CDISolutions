@@ -1,0 +1,39 @@
+.post-detail{
+    a{
+        color: $blue;
+    }
+    a,
+    p{
+        @extend %p;
+    }
+    h1{
+        @extend .h1; 
+        font-weight: bold;   
+        margin: $padding * 4 0;
+    }
+    h2{
+        @extend .h2;    
+        font-weight: bold;   
+        margin: $padding * 3 0;
+
+    }
+    h3{
+        font-weight: bold;   
+        @extend .h3;
+        margin: $padding * 2 0;
+
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        margin: 20px;
+    }
+    ol,
+    ul{
+        list-style: unset;
+        padding-left: 22px;
+        li{
+            @extend %p;
+        }
+    }
+}

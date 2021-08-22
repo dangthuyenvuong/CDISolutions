@@ -1,0 +1,48 @@
+.blockchain #main {
+    .section2{
+        padding: 100px 0;
+        background: url('../img/blockchain/development-img.png') no-repeat right 50px center;
+        .container{
+            --max-width: 1000px;
+            max-width: var(--max-width);
+
+        }
+        .list{
+            padding: 80px 0;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            --color: #{$orange};
+            .num{
+                font-size: 70px;
+                font-weight: 500;
+                color: var(--color);
+                width: 80px;
+                display: inline-block;
+            }
+            .h3{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p{
+                @extend %p;
+                padding-left: 85px;
+            }
+            li{
+                @extend %p;
+                display: flex;
+                align-items: flex-end;
+                &:before{
+                    width: 25px;
+                    height: 2px;
+                    background: var(--color);
+                    display: block;
+                    content: '';
+                    margin-bottom: 7px;
+                    margin-right: 10px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}

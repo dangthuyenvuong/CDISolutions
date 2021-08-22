@@ -1,29 +1,7 @@
+
 @import "element/variable";
-@import "core/variable";
-@import "core/css3";
 
-
-
-@import "core/reset";
-@import "core/class";
-@import "core/button";
-@import "core/text";
-@import "core/image";
-
-
-@import "core/grid";
-@import "core/mixin";
-// @import "template/class";
-// @import 'template/font';
-// @import "template/combonent";
-// @import "template/master";
-
-
-
-@import "core/component/accordion";
-@import "core/component/blog-content";
-@import "core/component/blog-post";
-
+@import "core/import";
 
 @import "element/font";
 @import "element/header";
@@ -46,3 +24,5 @@
 @import "page/service-mobile";
 @import "page/service-web";
 @import "page/service-ecommerce";
+@import "page/blockchain";
+@import "page/industries";

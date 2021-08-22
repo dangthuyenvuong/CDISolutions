@@ -1,24 +1,24 @@
 $main-color: #1E97DC !default;
-$text-black: black;
-$text-color: $text-black;
-$a-color: #0B1966;
-$yellow: yellow;
-$second-color: #CF9B4C;
+$text-black: black !default;
+$text-color: $text-black !default;
+$a-color: #0B1966 !default;
+$yellow: yellow !default;
+$second-color: #CF9B4C !default;
 
-$yellow:#f9c100;
-$green:#4caf50;
-$gray: #dedede;
-$red: #f44336;
-$red-dark: #f44336;
-$black: #222;
-$black-bright: #aaa;
+$yellow:#f9c100 !default;
+$green:#4caf50 !default;
+$gray: #dedede !default;
+$red: #f44336 !default;
+$red-dark: #f44336 !default;
+$black: #222 !default;
+$black-bright: #aaa !default;
 $blue: rgb(0, 22, 190) !default;
-$blue-bright: #4db2ec;
-$orange: rgb(255, 111, 49);
-$purple: rgb(65, 12, 188);
-$pink: rgb(196, 15, 121);
+$blue-bright: #4db2ec !default;
+$orange: rgb(255, 111, 49) !default;
+$purple: rgb(65, 12, 188) !default;
+$pink: rgb(196, 15, 121) !default;
 
-$a-color: $blue;
+$a-color: $blue !default;
 
 $classColor: ("orange":$orange,
     "yellow":$yellow,
@@ -28,7 +28,7 @@ $classColor: ("orange":$orange,
     "black": $black,
     "blue": #{$blue},
     "pink": $pink,
-    "purple" : $purple);
+    "purple" : $purple) !default;
 $classGradient: (("red-blue", $red, $blue),
     ("red-green", $red, $green),
     ("red-yellow", $red, $green),
@@ -37,4 +37,4 @@ $classGradient: (("red-blue", $red, $blue),
     ("green-blue", $yellow, $green),
     ("purple-orange", $purple, $orange),
     ("pink-blue", $pink, $blue),
-);
+) !default;

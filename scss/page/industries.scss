@@ -1,0 +1,57 @@
+.industries #main{
+    .section1{
+        padding-top: 200px;
+        --color: #{$yellow};
+        .carousel-cell{
+
+            width: 260px;
+            height: 450px;
+            margin: 0 15px;
+            .cover{
+                width: 100%;
+                height: 100%;
+                @extend %xy-center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .name{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                color: white;
+                background: linear-gradient(transparent, black);
+                padding: 20px 15px;
+                text-align: center;
+                @extend %p;
+            }
+            .tag{
+                top: 0;
+                @extend %center-x;
+                background: var(--color);
+                color: black;
+                border-radius: 0 0 5px 5px;
+                padding: 0 10px;
+                line-height: 35px;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        .flickity-prev-next-button{
+            background: var(--color);
+        }
+        .flickity-page-dots{
+            display: none;
+        }
+    }
+    .section2{
+        padding: 100px 0;
+        .container{
+            max-width: 1000px;
+        }
+    }
+}
